@@ -1,0 +1,36 @@
+<html>
+<style>
+  table,
+  td {
+      border: 1px solid #333;
+  }
+
+  thead,
+  tfoot {
+      background-color: #333;
+      color: #fff;
+  }
+
+</style>
+
+<table style="width:100%">
+<center><h2>Users Near You</h2></center>
+
+  <tr>
+    <th>Users Close By</th>
+    <th>Users Not Too Far(Mid-Distance)</th>
+    <th>Users Far From You</th>
+    <th>Users Within 5km to 10km from You</th>
+  </tr>
+  <tr>
+    <td><li>{% for i in close_by %}User:{{i.name}}
+    Location:{{i.geo_location}}{% endfor %}</li></td>
+    <td><li>{% for i in close_by %}User:{{i.name}}
+    Location:{{i.geo_location}}{% endfor %}</td>
+    <td>{% for i in far %}<li>User:{{i.name}}
+    Location:{{i.geo_location}}</li> {% endfor %}</td>
+      <td>{% for i in within_range %}User:{{i.name}}
+      Location:{{i.geo_location}}{% endfor %}</td>
+  </tr>
+</table>
+</html>
