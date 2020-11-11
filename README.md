@@ -1,6 +1,8 @@
 # GEOPROJECT
 A tutorial on how to use GeoDjango In measuring and finding the location of registered users on django.
 
+%[https://chukslord.hashnode.dev/a-taste-of-geodjango-for-user-location]
+
 ## PREREQUISITES
 GDAL,DJANGO,PYTHON,POSTGIS,POSTGRESQL
 
